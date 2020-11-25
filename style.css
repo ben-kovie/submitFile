@@ -1,0 +1,94 @@
+body{ 
+    margin: auto 0;
+    background-color: black;
+}
+
+
+/*-- the nav bar --*/
+.container{
+    background-color: rgba(1, 1, 8, 0.5);
+}
+
+.sticky{position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.links{display: flex;
+    list-style: none;
+    font-size: 0.5cm; 
+    margin: 0;
+
+}
+
+li { padding: 15px;
+}
+
+a { text-decoration: none;
+    color: cornsilk;
+}
+
+.push{  margin-left: auto;
+}
+
+
+/*--the area of cover image / cover--*/
+.cover{ display: flex;
+	align-items: center;
+justify-content: center;
+background-color: darkgray;
+font-size: xx-large;
+height: 80vh;
+}
+
+#pic{
+	height: 400px;
+    width: 50%;
+}
+
+
+/*--the grid-system with photos arranged in css-grid/ images/ layout--*/
+.text-area{ display:grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr ) );
+    background-color: rgba(0, 0, 0, 0.322);
+} 
+
+
+.box > img { width: 100%;
+
+} 
+
+.box { background-color: rgba(8, 66, 83, 0);
+    padding: 50px;
+    margin: 10px;
+} 
+
+
+/*--footer--*/
+ footer{ display: flex;
+	align-items: center;
+justify-content: center;
+background-color: rgba(9, 23, 53, 0.705);
+font-size: medium;
+height: 5vh;
+color: cornsilk;
+}
+
+/*responsive handcode*/
+@media screen and (max-width: 770px) {
+    body{
+        background-size: cover;
+        background-position: center;
+	}
+	.title{ display: none;
+	} 
+
+	#pageN{display: none;
+	}
+	#pic{
+		height: 250px;
+		width: 50%;
+	}
+
+} 
